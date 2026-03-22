@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mental wellness check-in</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Mental wellness check-in</h1>
+        <p class="lede">
+          A short, private reflection. This is not a diagnosis or medical tool.
+        </p>
+      </header>
+
+      <main>
+        <form id="checkin" class="card" novalidate>
+          <ol class="questions" id="questions"></ol>
+          <div class="actions">
+            <button type="submit" class="btn primary">See summary</button>
+            <button type="button" class="btn ghost" id="reset">Start over</button>
+          </div>
+        </form>
+
+        <section id="results" class="card results hidden" aria-live="polite"></section>
+      </main>
+
+      <footer class="footer">
+        <p>
+          If you are in crisis, contact local emergency services or a crisis line
+          in your area.
+        </p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
